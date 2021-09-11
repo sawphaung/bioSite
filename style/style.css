@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@400;500;600;700&display=swap");
 /* Styling Start Here */
 *,
 *::before,
@@ -6,5 +7,185 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-width: 350px;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.btn, .btn-aboutme {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 6px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-aboutme {
+  background: #714622;
+  margin: 20px 0;
+}
+
+.btn-aboutme:hover {
+  background: #716522;
+}
+
+.heroSection-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+  height: 700px;
+}
+
+.heroSection-home > * {
+  width: calc(100% / 2);
+}
+
+.heroSection-home .content-wrap {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 7%;
+}
+
+.heroSection-home .content-wrap h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #716522;
+}
+
+.heroSection-home .content-wrap p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.heroSection-home .image-wrap img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.introSection-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.introSection-about .content-wrap {
+  width: 60%;
+  padding-left: 5%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.introSection-about .content-wrap p {
+  line-height: 1.8;
+}
+
+.introSection-about .image-wrap {
+  width: 40%;
+}
+
+.introSection-about .image-wrap img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.about-secondSection {
+  padding-bottom: 50px;
+}
+
+.about-secondSection p {
+  margin-bottom: 25px;
+}
+
+.hobby-introSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.hobby-introSection .image-wrap {
+  width: 40%;
+}
+
+.hobby-introSection .content-wrap {
+  width: 60%;
+  padding-left: 5%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hobby-introSection .content-wrap p {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 13px 10px;
+  background: #4f3c18;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: auto;
 }
 /*# sourceMappingURL=style.css.map */

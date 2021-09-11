@@ -1,3 +1,18 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@400;500;600;700&display=swap");
+
+$open-sans: "Open Sans", sans-serif;
+$oswald: "Oswald", sans-serif;
+
+$white: #fff;
+$black: #000;
+
+$main-color: #716522;
+$secondary-color1: #714c22;
+$secondary-color2: #4f3c18;
+$secondary-color3: #714622;
+$secondary-color4: #4f3118;
+
 /* Styling Start Here */
 *,
 *::before,
@@ -5,4 +20,177 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-width: 350px;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: $open-sans;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+// Wrapper
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: $oswald;
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+//buttons
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 6px;
+  font-family: $oswald;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.btn-aboutme {
+  @extend .btn;
+  background: $secondary-color3;
+  margin: 20px 0;
+
+  &:hover {
+    background: $main-color;
+  }
+}
+
+// Hero Section - Home
+.heroSection-home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  height: 700px;
+
+  & > * {
+    width: calc(100% / 2);
+  }
+
+  // content
+  .content-wrap {
+    align-self: center;
+    padding-right: 7%;
+
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: $main-color;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+  }
+
+  // Image Wrap
+  .image-wrap {
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
+
+// About page
+.introSection-about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+  // Content Wrap
+  .content-wrap {
+    width: 60%;
+    padding-left: 5%;
+    align-self: center;
+
+    p {
+      line-height: 1.8;
+    }
+  }
+
+  // Image Wrap
+  .image-wrap {
+    width: 40%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
+
+// about second section
+.about-secondSection {
+  padding-bottom: 50px;
+
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+// hobby page
+.hobby-introSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+  // image
+  .image-wrap {
+    width: 40%;
+  }
+
+  //content wrap
+  .content-wrap {
+    width: 60%;
+    padding-left: 5%;
+    align-self: center;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Footer
+footer {
+  padding: 13px 10px;
+  background: $secondary-color2;
+  color: $white;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: auto;
 }
