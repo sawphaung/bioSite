@@ -102,6 +102,7 @@ figcaption {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.1em;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -308,4 +309,83 @@ footer {
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.12em;
+}
+
+// Contact Section
+.contact-section {
+  width: 100%;
+  margin: 50px auto 0;
+
+  // content-wrap
+  .content-wrap {
+    text-align: center;
+  }
+
+  // Form
+  .form {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+
+    // row
+    .row {
+      margin-bottom: 10px;
+
+      .col-2 {
+        display: flex;
+        justify-content: space-between;
+
+        & > * {
+          width: calc(100% / 2 - 5px);
+        }
+      }
+    }
+
+    input {
+      display: block;
+      outline: none;
+      border: 1px solid $main-color;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      font-family: inherit;
+      letter-spacing: 0.07em;
+      padding: 5px 10px;
+
+      &:focus {
+        border-color: $black;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 130px;
+      resize: none;
+      outline: none;
+      border: 1px solid $main-color;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: inherit;
+      letter-spacing: 0.07em;
+      padding: 5px 10px;
+
+      &:focus {
+        border-color: $black;
+      }
+    }
+
+    .btn-submit {
+      @extend .btn;
+      border: none;
+      outline: none;
+      background: $main-color;
+      margin: 20px auto;
+
+      // hover
+      &:hover {
+        background: $secondary-color1;
+      }
+    }
+  }
 }
