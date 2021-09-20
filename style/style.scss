@@ -379,12 +379,12 @@ footer {
       @extend .btn;
       border: none;
       outline: none;
-      background: $main-color;
+      background: $secondary-color3;
       margin: 20px auto;
 
       // hover
       &:hover {
-        background: $secondary-color1;
+        background: $main-color;
       }
     }
   }
