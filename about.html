@@ -10,7 +10,8 @@
     <meta name="author" content="Saw Phaung" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page - Ashin Zargara</title>
-    <link rel="stylesheet" href="./style/style.css?v=0.4">
+    <link rel="stylesheet" href="./style/style.css?v=0.6">
+
 </head>
 
 <body>
@@ -51,6 +52,34 @@
     <footer>
         <p>@ copyright 2021 | Ashin Zargara</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '30px', // default: '32px'
+                right: '30px', // default: '32px'
+                left: 'unset', // default: 'unset'
+                time: '0.5s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: false, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+
+        ß
+    </script>
+
 
 
 </body>

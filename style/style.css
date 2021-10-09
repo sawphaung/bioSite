@@ -238,7 +238,7 @@ nav ul li a:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .introSection-about {
@@ -297,7 +297,7 @@ nav ul li a:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .split-section {
@@ -338,7 +338,7 @@ nav ul li a:hover {
 .split-section .image-wrap img {
   display: block;
   max-width: 100%;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -446,12 +446,12 @@ nav ul li a:hover {
 footer {
   display: block;
   margin-top: 50px;
-  padding: 12px 10px;
+  padding: 10px 10px;
   background: #4f3c18;
   color: #fff;
   font-size: 16px;
   text-align: center;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.05em;
 }
 
 .contact-section {
@@ -470,7 +470,7 @@ footer {
 }
 
 .contact-section .form .row {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contact-section .form .row .col-2 {
@@ -493,8 +493,14 @@ footer {
     width: 100%;
   }
   .contact-section .form .row .col-2 > *:first-of-type {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
+}
+
+.contact-section .form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .contact-section .form input {
@@ -506,8 +512,9 @@ footer {
   height: 50px;
   font-size: 16px;
   font-family: inherit;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.09em;
   padding: 5px 10px;
+  font-weight: 500;
 }
 
 .contact-section .form input:focus {
@@ -523,8 +530,9 @@ footer {
   border-radius: 5px;
   font-size: 16px;
   font-family: inherit;
-  letter-spacing: 0.07em;
-  padding: 5px 10px;
+  letter-spacing: 0.09em;
+  padding: 10px;
+  font-weight: 500;
 }
 
 .contact-section .form textarea:focus {
@@ -540,5 +548,9 @@ footer {
 
 .contact-section .form .btn-submit:hover {
   background: #716522;
+}
+
+.darkmode--activated li a {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
